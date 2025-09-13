@@ -1,4 +1,10 @@
 .callout {
+    max-width: 400px;
+    margin: 10px;
+    border: 1px solid #f8efef00;
+    padding: 10px;
+    background-color: #247;
+    color: #fff
 	
 }
 
