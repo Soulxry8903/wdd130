@@ -1,10 +1,28 @@
+nav{
+    background-color: #556b2f;
+    padding: 5px;
+}
+
+nav a {
+    color: #f0f8ff;
+    padding: 10px;
+    display: block;   
+}
+
 main { 
-    width: 800px;
+    max-width: 800px;
+}
+
+h1 {
+    color:#333;
 }
 
 main img{ 
     width: 150px;
     height: auto;
+    border:1px solid rgb(0 0 0 / 0.2);
+    padding: 2px;
+    box-shadow: 0 0 30px #3d2b1f;
 }
 
 aside { 
@@ -12,7 +30,7 @@ aside {
     margin:10px;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 50px;
-    background-color: #f5f5dc;
+    background-color: #a9a9a9;
     color: #333;
     text-align: center
 }
@@ -29,5 +47,5 @@ p {
 footer {
     margin-top: 20px;
     border-top: 15px;
-    text-align: left;
+    text-align: center;
 }
