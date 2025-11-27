@@ -176,6 +176,10 @@ footer {
     color: #000
 }
 
+footer p {
+    text-align: center;
+}
+
 .socialmedia img {
     align-items: center;
     text-decoration: none;
