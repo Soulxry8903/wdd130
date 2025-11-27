@@ -1,8 +1,8 @@
 :root {
     --primary-color: #2a57eb; /* Royal Blue */
-    --secondary-color: #00ffb7; /* Green */
+    --secondary-color: #bfebff; /* blue */
     --accent1-color: #516eff; /* purple*/
-    --accent2-color: #fffffff1; /* Coral */
+    --accent2-color: #000000f1; /* Coral */
     --header-font: 'Arial Black', sans-serif;
     --body-font: 'Verdana', sans-serif;
 }
@@ -25,7 +25,7 @@ header {
   grid-template-columns: 1fr 2fr;
   align-items: center;
   padding: 20px 40px;
-  background-color: #e6f7ff;
+  background-color: var(--secondary-color);
   border-bottom: 2px solid #ccc;
 }
 
@@ -131,7 +131,7 @@ h2 {
 
 section p {
     margin: 0 auto;
-    color:#000;
+    color: var(--accent2-color);
     font-family: var(--body-font);
 }
 
@@ -160,7 +160,7 @@ figure {
 figcaption {
     font-family: var(--body-font);
     margin-top: 5px;
-    color: #000;
+    color: var(--accent2-color);
 }
 
 
@@ -170,10 +170,10 @@ footer {
     align-items: center;
     gap: 30px;
     margin-top: 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--accent2-color);
     text-align: left;
     font-size: small;
-    color: #000
+    color: var(--accent2-color);
 }
 
 footer p {
