@@ -73,16 +73,6 @@ nav, p, section, article {
     padding: 5px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-    width: 20px;
-    height: 20px;
-}
-
-.hero {
-    position: relative;
-}
-
 .hero img {
     display: block;
     width: 100%;
@@ -93,7 +83,7 @@ h1{
     position: absolute;
     top: 8%;
     width: 100%;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -110,21 +100,29 @@ h1{
 
 .hero article {
     position: absolute;
-    top: 72%;
+    top: 50%;
     left: 0%;
     right: 0%;
     margin: 0 auto;
     width: 95%;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
     color: #fff;
+}
 
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    margin-top: 15px;
 }
 
 h2 {
     width: 100%;
+    margin-bottom: 15px;
     background-color: var(--accent1-color);
     text-align: center;
     font-family: var(--header-font);
@@ -132,14 +130,55 @@ h2 {
 }
 
 section p {
-    text-align: center;
+    margin: 0 auto;
     color:#000;
     font-family: var(--body-font);
 }
 
+ .section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure {
+    text-align: center;
+    margin: auto;
+}
+
+figcaption {
+    font-family: var(--body-font);
+    margin-top: 5px;
+    color: #000;
+}
+
+
 footer {
-    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 3fr 0.9fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
     border-top: 1px solid #000;
     text-align: left;
-    font-size: smaller;
+    font-size: small;
+    color: #000
+}
+
+.socialmedia img {
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
 }
