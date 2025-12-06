@@ -235,7 +235,7 @@ label {
   color: var(--accent2-color)
 }
 
-input[type="text"],
+ input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
