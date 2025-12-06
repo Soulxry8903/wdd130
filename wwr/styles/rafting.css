@@ -209,15 +209,15 @@ footer p {
 .map {
     display: flex;
     justify-content: flex-start;
-    width: 450px;
+    width: 350px;
     height: auto;
     margin-bottom: 30px;
 }
 
 .mid-section {
-  display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
   
 }
 
@@ -244,6 +244,12 @@ textarea {
   box-sizing: border-box;
 }
 
+input[type="textarea"]
+textarea {
+  padding: 15px;
+  resize: vertical;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 8px;
@@ -261,4 +267,21 @@ button {
 
 button:hover {
   background-color: #005fa3;
+}
+
+.name label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.email label {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: var(--accent2-color);
+    font-size: 1rem;
 }
