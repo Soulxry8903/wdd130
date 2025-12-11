@@ -215,6 +215,7 @@ footer p {
     color: var(--accent2-color);
     font-size: 2rem;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .wild p {
@@ -245,54 +246,22 @@ form {
   
 }
 
-label {
-  font-weight: bold;
-  margin-top: 10px;
-  display: block;
-  color: var(--accent2-color)
-}
-
- input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  box-sizing: border-box;
-}
-
-input[type="textarea"]
-textarea {
-  padding: 15px;
-  resize: vertical;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-button {
-  background-color: #979797;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  margin-top: 15px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #005fa3;
-}
-
-.name label {
+.name, .email, .message-purpose {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.email label {
-    text-align: left;
+.name label, .email label, .message-purpose label {
+  font-weight: bold;
+  color: var(--accent2-color);
+  order: -1;
+}
+
+.message-purpose input {
+    flex-direction: column;
+    order: 1;
 }
 
 h4 {
@@ -316,7 +285,7 @@ h4 {
 .home img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 500px;
 }
 
 .home h1 {
@@ -348,6 +317,7 @@ h4 {
 .form input {
     align-items: center;
     width: 100%;
+    margin-bottom: 10px;
     box-shadow: #ccc 0px 0px 10px;
     border-radius: 5px;
 }
@@ -550,3 +520,44 @@ button {
     font-size: 16px;
     border-radius: 5px;
 }
+
+.trip-select label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--header-font);
+}
+
+.trip-select select {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.button-trips {
+    margin-top: 15px;
+    text-align: left;
+}
+
+h5{
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-family: var(--header-font);
+    font-size: 1.2em;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.cta-contact-button a {
+    margin-top: 15px;
+    text-align: left;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/*Trips page end*/
