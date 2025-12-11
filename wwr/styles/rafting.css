@@ -358,6 +358,7 @@ h4 {
     border-color: #000;
     border-radius: 5px;
     width: 100%;
+    cursor: pointer;
 }
 
 h3 {
@@ -377,9 +378,8 @@ h3 {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
-
-
 
 .section-index img {
     width: 350px;
@@ -390,6 +390,7 @@ h3 {
 .section-index p {
     font-size: 1.2rem;
     align-items: center;
+    font-family: var(--body-font);
     
 }
 
@@ -405,6 +406,7 @@ h3 {
     padding-bottom: 15px;
     font-size: 1.5em;
     white-space: nowrap;
+    font-family: var(--header-font);
 }
 
 .wchooseus {
@@ -427,3 +429,124 @@ h3 {
 
 /*Trips page start*/
 
+.trips h1 {
+    color: var(--accent2-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.trips img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.trips h2 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.trips table,td {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--accent2-color)
+}
+
+.trips table {
+    border-radius: 10px;
+}
+
+.trips h3 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-family: var(--header-font);
+    font-size: 1.4em;
+}
+
+.trips p {
+    color: var(--accent2-color);
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: var(--body-font);
+}
+
+.trips h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-family: var(--header-font);
+}
+
+.header-all-trips {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.all-trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    color: var(--accent2-color);
+}
+
+.all-trips-table th,
+.all-trips-table td {
+    border: 1px solid var(--accent2-color);
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.name-trips, .email-trips {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+}
+
+form {
+    left: 89px;
+    text-align: left;
+    padding: 20px;
+}
+
+.name-trips label, .email-trips label {
+  font-weight: bold;
+  color: var(--accent2-color);
+  order: 1;
+}
+.name-trips input, .email-trips input {
+    flex: 2;
+    order: 2;
+    border-color: #000;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-self: flex-end;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
