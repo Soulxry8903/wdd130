@@ -7,6 +7,8 @@
     --body-font: 'Verdana', sans-serif;
 }
 
+/*about page start*/
+
 grid-container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -50,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #2a57eb;
 }
 
 body {
@@ -79,13 +81,13 @@ nav, p, section, article {
     height: 100%;
 }
 
-h1{
+.main-h1 {
     position: absolute;
     top: 8%;
     width: 100%;
     padding: 10px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.9;
     background-color: var(--accent1-color);
     color: #fff;
 
@@ -96,6 +98,7 @@ h1{
     margin: auto;
     width: 150px;
     box-shadow: gray 0px 0px 30px;
+    padding-left: 10px;;
 }
 
 .hero article {
@@ -107,9 +110,10 @@ h1{
     width: 95%;
     padding: 10px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: var(--accent1-color);
     color: #fff;
+    
 }
 
 .hero {
@@ -120,7 +124,16 @@ h1{
     margin-top: 15px;
 }
 
-h2 {
+.main-h2 {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--accent1-color);
+    text-align: center;
+    font-family: var(--header-font);
+    color: #fff
+}
+
+.about-h2 {
     width: 100%;
     margin-bottom: 15px;
     background-color: var(--accent1-color);
@@ -186,6 +199,10 @@ footer p {
     width: 40px;
     height: 40px;
 }
+
+/*about page end*/
+
+/*contact page start*/
 
 .wild {
     display: grid;
@@ -285,3 +302,128 @@ h4 {
     color: var(--accent2-color);
     font-size: 1rem;
 }
+
+/*contact page end*/
+
+/*index page start*/
+.home {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home h1 {
+    position: absolute;
+    top: 8%;
+    width: auto;
+    height: 100px;
+    left: 50px;
+    align-items: center;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    background-color: white;
+    left: 50px;
+    padding: 1em;
+    align-items: left;
+    border-radius: 5px;
+}
+
+.form label {
+    text-align: left;
+    width: 100px;
+}
+
+.form input {
+    align-items: center;
+    width: 100%;
+    box-shadow: #ccc 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.form button {
+    text-align: center;
+    background-color: var(--primary-color);
+    border-color: #000;
+    border-radius: 5px;
+    width: 100%;
+}
+
+h3 {
+    display: block;
+    width: 150px;
+    align-items: center;
+}
+
+.index-h2 {
+    padding-bottom: 10px;
+}
+
+.cta-button a {
+    margin-top: 15px;
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.section-index img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.section-index p {
+    font-size: 1.2rem;
+    align-items: center;
+    
+}
+
+.section-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.section-index-2 h3 {
+    color: var(--primary-color);
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.wchooseus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;    
+}
+
+.why-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*contact page start*/
+
+/*Trips page start*/
+
